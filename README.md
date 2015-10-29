@@ -39,12 +39,12 @@ all files not excluded by the .gitignore file.
 
 When installing the given `composer.json` some tasks are taken care of:
 
-* Drupal will be installed in the `web`-directory.
+* Drupal will be installed in the `docroot`-directory.
 * Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
+  instead of the one provided by Drupal (`docroot/vendor/autoload.php`).
+* Modules (packages of type `drupal-module`) will be placed in `docroot/modules/contrib/`
+* Theme (packages of type `drupal-theme`) will be placed in `docroot/themes/contrib/`
+* Profiles (packages of type `drupal-profile`) will be placed in `docroot/profiles/contrib/`
 * Creates default writable versions of `settings.php` and `services.yml`.
 * Creates `sites/default/files`-directory.
 * Latest version of drush is installed locally for use at `vendor/bin/drush`.
@@ -65,7 +65,7 @@ Follow the steps below to update your core files.
 1. Run `git diff` to determine if any of the scaffolding files have changed. 
    Review the files for any changes and restore any customizations to 
   `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
+1. Commit everything all together in a single commit, so `docroot` will remain in
    sync with the `core` when checking out branches or running `git bisect`.
 1. In the event that there are non-trivial conflicts in step 2, you may wish 
    to perform these steps on a branch, and use `git merge` to combine the 
