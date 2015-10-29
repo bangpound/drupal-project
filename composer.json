@@ -54,7 +54,9 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
     },
     "extra": {
         "installer-paths": {
