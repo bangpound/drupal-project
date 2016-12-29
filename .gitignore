@@ -1,3 +1,24 @@
 /bin/*
 !/bin/.gitkeep
 
+docroot/*
+vendor
+
+!docroot/sites
+docroot/sites/*
+!docroot/sites/default
+docroot/sites/default/*
+!docroot/sites/default/settings.php
+docroot/sites/default/files/*
+!docroot/sites/default/files/.gitkeep
+
+!docroot/sites/all
+docroot/sites/all/*
+!docroot/sites/all/modules
+docroot/sites/all/modules/*
+!docroot/sites/all/modules/custom
+!docroot/sites/all/themes
+docroot/sites/all/themes/*
+!docroot/sites/all/themes/custom
+
+composer.lock # remove this in real projects!

@@ -4,7 +4,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packagist.drupal-composer.org"
+            "url": "https://packages.drupal.org/7"
         }
     ],
     "require": {
@@ -19,6 +19,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "post-create-project-cmd": [
+            "rm README.md LICENSE .travis.yml phpunit.xml.dist"
+        ]
     },
     "config": {
         "bin-dir": "bin",
